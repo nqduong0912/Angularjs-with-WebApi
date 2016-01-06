@@ -1,0 +1,166 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="VPB_KTNB.Share.Share_Wsp" CodeBehind="Wsp.master.cs" MasterPageFile="~/Share/VPB.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Literal runat="server" ID="ctxstatus"></asp:Literal>
+
+    <script type="text/javascript">
+        $("#aspnetForm").hide();
+        //            var ld = (document.all);
+        //            var ns4 = document.layers;
+        //            var ns6 = document.getElementById && !document.all;
+        //            var ie4 = document.all;
+        //            if (ns4)
+        //                ld = document.loading;
+        //            else if (ns6)
+        //                ld = document.getElementById("loading").style;
+        //            else if (ie4)
+        //                ld = document.all.loading.style;
+
+        function init() {
+            //                try
+            //                {
+            //                    if (ns4) { ld.visibility = "hidden"; }
+            //                    else if (ns6 || ie4) ld.display = "none";
+            //                    $("#aspnetForm").show();
+            //                }
+            //                catch(exception)
+            //                {
+            //                }
+
+            $("#loading").hide();
+            $("#aspnetForm").show();
+
+            window.status = "<%= username %>";
+                window.status += " | <%= usercode %>";
+                window.status += " | <%= rolename %>";
+                window.status += " | <%= groupname %>";
+                window.status += " | <%= groupdesc %>";
+            }
+    </script>
+
+    <div class="col-md-9 col-sm-8">
+        <div class="table-cvcth">
+            <!--form header-->
+            <div class="heading-khn">
+                <div class="pull-left">
+                    <i class="fa fa-chevron-right fa-fw"></i>
+                    <asp:Label runat="server" ID="lblFormCaption" CssClass="left-text" Text="[Form caption here...]"></asp:Label>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!--form detail-->
+            <div class="body-table">
+                <asp:ContentPlaceHolder runat="server" ID="FormContent">
+                    <asp:Literal runat="server" ID="GridScript"></asp:Literal>
+                </asp:ContentPlaceHolder>
+            </div>
+            <!--form footer-->
+            <div class="body-table">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-sm-3 col-sm-offset-1" id="Submit_Waiting">&nbsp;</div>
+                        <div class="col-sm-8">
+                            <asp:ContentPlaceHolder runat="server" ID="ButtonExtendBefore"></asp:ContentPlaceHolder>
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnCONTENT" Text="Nội dung" SkinID="ContentButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnEXCEL" Text="Xuất Excel" SkinID="ExportExcel" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnCANCEL" Text="Hủy bỏ" SkinID="BackButton" Visible="false" />
+
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnADDNEW" Text="Thêm mới" SkinID="InsertButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnSAVE" Text="Chấp nhận" SkinID="SaveButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnEDIT" Text="Chấp nhận" SkinID="UpdateButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnATTACHFILE" Text="" SkinID="AttachFileButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnADDLINK" Text="Liên kết" SkinID="AddLinkButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnSHAREPERMISSION" Text="Ủy quyền" SkinID="SharePermissionButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnCLEAR" Text="Thiết lập lại" SkinID="RemoveButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnREMOVE" Text="Gỡ bỏ" SkinID="RemoveButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnPRINT" Text="In" SkinID="printReportButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnMONITORING" Text="Theo dõi" SkinID="MonitoringButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnTRANSBACK" Text="Chuyển trả lại" SkinID="TransbackButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnTRANSFER" Text="Chuyển xử lý" SkinID="TransferButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnFINISH" Text="Kết thúc" SkinID="FinishButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnDELETE" Text="Xóa" SkinID="DeleteButton" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnREOPEN" SkinID="ReOpen" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnRESOLVE" SkinID="Resolve" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnCLOSE" SkinID="Colse" Visible="false" />
+                            <asp:Button runat="server" CssClass="btn btn-xs btn-success btn-block  btn-submit" ID="btnCLOSEWIN" SkinID="CloseWindowButton" Visible="false" />
+                            <asp:ContentPlaceHolder runat="server" ID="ButtonExtend"></asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder runat="server" ID="FormFooter"></asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        /* DungNQ, Start: set màu và đối tượng trên bảng*/
+        var color_selected = 'Moccasin';
+        var obj_selected = null;
+        /* End: set màu và đối tượng trên bảng*/
+        $(function () {
+            try {
+                /*TextBoxDateTime*/
+                $('.TextBoxDateTime').datePicker({ startDate: '01/01/1900 23:59:59' });
+                $(".TextBoxDateTime").mask("99/99/9999 99:99:99", { placeholder: "_" });
+
+                /*TextBoxDate*/
+                $('.TextBoxDate').datePicker({ startDate: '01/01/1900' });
+                $(".TextBoxDate").mask("99/99/9999", { placeholder: "_" });
+
+                /*TextBoxDateRequired*/
+                $('.TextBoxDateRequired').datePicker({ startDate: '01/01/1900' });
+                $(".TextBoxDateRequired").mask("99/99/9999", { placeholder: "_" });
+
+                /*TextBoxDate_Bold*/
+                $('.TextBoxDate_Bold').datePicker({ startDate: '01/01/1900' });
+                $(".TextBoxDate_Bold").mask("99/99/9999", { placeholder: "_" });
+
+                /*TextBoxDate_Blue*/
+                $('.TextBoxDate_Blue').datePicker({ startDate: '01/01/1900' });
+                $(".TextBoxDate_Blue").mask("99/99/9999", { placeholder: "_" });
+
+                /*TextBoxDate_Blue_Bold*/
+                $('.TextBoxDate_Blue_Bold').datePicker({ startDate: '01/01/1900' });
+                $(".TextBoxDate_Blue_Bold").mask("99/99/9999", { placeholder: "_" });
+
+                /*TextBoxDate_Red*/
+                $('.TextBoxDate_Red').datePicker({ startDate: '01/01/1900' });
+                $(".TextBoxDate_Red").mask("99/99/9999", { placeholder: "_" });
+
+                /*TextBoxDate_Red_Bold*/
+                $('.TextBoxDate_Red_Bold').datePicker({ startDate: '01/01/1900' });
+                $(".TextBoxDate_Red_Bold").mask("99/99/9999", { placeholder: "_" });
+
+                /*TextBoxNumericYear*/
+                $(".TextBoxNumericYear").mask("9999", { type: "reverse" }, { defaultValue: '+000' });
+                //$(".TextBoxPercent").mask("999", { defaultValue: '+000' });
+
+                $(".TextBoxNumericYear").attr("value", GetCurrentYear());
+                //$(".TextBoxDateRequired").attr("value", GetCurrentDate());
+                //$(".TextBoxDate").attr("value", GetCurrentDate());
+
+                $(".TextBoxPercent").keydown(function (e) {
+                    // Allow: backspace, delete, tab, escape, enter and .
+                    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+                        // Allow: Ctrl+A
+                        (e.keyCode == 65 && e.ctrlKey === true) ||
+                        // Allow: Ctrl+C
+                        (e.keyCode == 67 && e.ctrlKey === true) ||
+                        // Allow: Ctrl+X
+                        (e.keyCode == 88 && e.ctrlKey === true) ||
+                        // Allow: home, end, left, right
+                        (e.keyCode >= 35 && e.keyCode <= 39)) {
+                        // let it happen, don't do anything
+                        return;
+                    }
+                    // Ensure that it is a number and stop the keypress
+                    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                        e.preventDefault();
+                    }
+                });
+            }
+            catch (e) {
+                return;
+            }
+        });
+    </script>
+</asp:Content>

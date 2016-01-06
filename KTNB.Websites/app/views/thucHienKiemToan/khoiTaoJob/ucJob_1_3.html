@@ -1,0 +1,100 @@
+﻿<!-- UCJOB-1.3 Chọn mảng nghiệp vụ -->
+<div class="form-horizontal">
+    <h4>1. Danh mục mảng nghiệp vụ</h4>
+    <div class="form-group">
+        <div class="col-sm-offset-0 col-sm-3 col-xs-4">
+            <label for="ten-mang-nghiep-vu-cmnvt" class="control-label">Mảng nghiệp vụ <span class="star-red">*</span></label>
+        </div>
+        <div class="col-sm-3">
+            <select id="ten-mang-nghiep-vu-cmnvt" name="mangNghiepVu" class="form-control vpbChosenJs" required ng-model="mangNghiepVuDocumentId" options="lstMangNghiepVu" ng-options="m.PK_DocumentID as m.Ten for m in lstMangNghiepVu"></select>
+            <div data-ng-show="myForm.mangNghiepVu.$dirty">
+                <span data-ng-show="myForm.mangNghiepVu.$error.required" class="text-danger">Vui lòng chọn mảng nghiệp vụ</span>
+            </div>
+        </div>
+        <a class="btn btn-default" ng-click="viewRiskProfileFunc(mangNghiepVuDocumentId)" style="margin: 0 20px">Xem Risk Profile</a>
+    </div>
+    <div class="body-table">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead class="color-green">
+                    <tr>
+                        <th>Mảng nghiệp vụ</th>
+                        <th>Quy trình</th>
+                        <th>Bước/ hoạt động chi tiết</th>
+                        <th>Mục tiêu</th>
+                        <th>Rủi ro</th>
+                        <th>Kiểm soát</th>
+                        <th>Thủ tục</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="r in tab3lstRiskProfile.Items">
+                        <td>{{ r.MangNghiepVu }}</td>
+                        <td>{{ r.QuyTrinh }}</td>
+                        <td>{{ r.BuocHoatDong }}</td>
+                        <td>{{ r.MucTieu }}</td>
+                        <td>{{ r.RuiRo }}</td>
+                        <td>{{ r.KiemSoat }}</td>
+                        <td>{{ r.ThuTuc }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div data-ng-show="tab3lstRiskProfile.TotalPages > 0" class="vpb--pagination clearfix">
+        <div class="pull-left">
+            <span>Trang {{ tab3lstRiskProfile.CurrentPage }}/{{ tab3lstRiskProfile.TotalPages }}</span>
+        </div>
+        <div class="pull-right">
+            <pagination total-items="tab3lstRiskProfile.TotalItems" ng-model="tab3lstRiskProfile.CurrentPage" max-size="tab3lstRiskProfile.NumberOfLinks" ng-change="changePage2Func(tab3lstRiskProfile.CurrentPage)" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+        </div>
+    </div>
+</div>
+<div class="form-horizontal">
+    <div class="form-group">
+        <div class="col-sm-offset-0 col-sm-3 col-xs-4">
+            <label for="ten-mang-nghiep-vu-choice-cmnvt" class="control-label">Mảng nghiệp vụ <span class="star-red">*</span></label>
+        </div>
+        <div class="col-sm-3">
+            <select id="ten-mang-nghiep-vu-choice-cmnvt" name="mangNghiepVuChoice" class="form-control vpbChosenJs" required ng-model="mangNghiepVuChosen.PK_DocumentID" options="lstMangNghiepVu" ng-options="m.PK_DocumentID as m.Ten for m in lstMangNghiepVu"></select>
+            <div data-ng-show="myForm.mangNghiepVuChoice.$dirty">
+                <span data-ng-show="myForm.mangNghiepVuChoice.$error.required" class="text-danger">Vui lòng chọn mảng nghiệp vụ</span>
+            </div>
+        </div>
+        <a class="btn btn-default" ng-click="insertMangNghiepVuFunc(mangNghiepVuChosen)" style="width: 100px">Chọn</a>
+        <a class="btn btn-default" ng-click="editMangNghiepVuFunc(mangNghiepVuChosen)">Sửa tên Mảng nghiệp vụ</a>
+    </div>
+</div>
+<div class="form-horizontal">
+    <h4>2. Danh sách mảng nghiệp vụ được chọn</h4>
+    <div class="body-table">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead class="color-green">
+                    <tr>
+                        <th>Tên mảng nghiệp vụ</th>
+                        <th>Trạng thái</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="m in lstMangNghiepVuDuocChon">
+                        <td>{{ m.MangNghiepVu }}</td>
+                        <td>{{ m.TrangThai }}</td>
+                        <td>
+                            <a class="click-icon" href="#" ng-click="changeTrangThaiFunc(m)">
+                                <span class="glyphicon glyphicon-lock"></span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="vpb-btns">
+        <button type="button" class="btn btn-primary" ng-click="saveMangNghiepVuFunc()">Lưu</button>
+        <button type="button" class="btn btn-primary" ng-click="editMangNghiepVu_QuyTrinhFunc()">Thêm/Sửa Mảng nghiệp vụ/Quy trình</button>
+        <button type="button" class="btn btn-primary" ng-click="downloadRiskProfileFunc()">Tải về Risk profile template</button>
+        <button type="button" class="btn btn-primary" ng-click="uploadRiskProfileFunc()">Tải lên Risk profile </button>
+    </div>
+</div>

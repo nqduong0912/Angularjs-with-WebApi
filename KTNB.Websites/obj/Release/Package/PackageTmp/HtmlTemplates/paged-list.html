@@ -1,0 +1,27 @@
+﻿<div class="clearfix">
+    <div class="pull-left">
+        <span>Trang {{ data.CurrentPage }}/{{ data.TotalPages }}</span>
+    </div>
+    <div class="pull-right" data-ng-show="data.TotalPages > 0">
+        <ul class="vpb--pagination pagination pagination-sm">
+            <li data-ng-class="{disabled : data.CurrentPage == 1}" title="1">
+                <a href="#" data-ng-click="changePageFunc(1)"><i class="fa fa-angle-double-left"></i></a>
+            </li>
+            <li data-ng-class="{disabled : data.CurrentPage == 1}" title="{{ data.CurrentPage > 1 ? data.CurrentPage - 1 : 1 }}">
+                <a href="#" data-ng-click="changePageFunc(data.CurrentPage > 1 ? data.CurrentPage - 1 : 1)"><i class="fa fa-angle-left"></i></a>
+            </li>
+
+            <li data-ng-class="{active : data.CurrentPage == page}" data-ng-repeat="page in data.Pages" title="{{ page }}">
+                <a href="#" data-ng-click="changePageFunc(page)">{{ page }}</a>
+            </li>
+
+            <li data-ng-class="{disabled : data.CurrentPage == data.TotalPages}" title="{{ data.CurrentPage < data.TotalPages ? data.CurrentPage + 1 : data.TotalPages }}">
+                <a href="#" data-ng-click="changePageFunc(data.CurrentPage < data.TotalPages ? data.CurrentPage + 1 : data.TotalPages)"><i class="fa fa-angle-right"></i></a>
+            </li>
+
+            <li data-ng-class="{disabled : data.CurrentPage == data.TotalPages}" title="{{ data.TotalPages }}">
+                <a href="#" data-ng-click="changePageFunc(data.TotalPages)"><i class="fa fa-angle-double-right"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>

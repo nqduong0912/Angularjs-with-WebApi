@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C8B657C-2188-4AF5-8B30-979134A4D501}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KTNB.Extended</RootNamespace>
+    <AssemblyName>KTNB.Extended</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\DLL\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\DLL\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\DLL\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer">
+      <HintPath>..\DLL\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\DLL\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="vpb.app.business.core.objectcontext">
+      <HintPath>..\DLL\vpb.app.business.core.objectcontext.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biz\Dao\BoQuyMoManager.cs" />
+    <Compile Include="Biz\Dao\CategoriesManager.cs" />
+    <Compile Include="Biz\Dao\Group_Manager.cs" />
+    <Compile Include="Biz\Dao\QuyMoManager.cs" />
+    <Compile Include="Biz\Dao\T_DocumentManager.cs" />
+    <Compile Include="Biz\Dao\T_TypeDocPropertyManager.cs" />
+    <Compile Include="Biz\Dao\UserManager.cs" />
+    <Compile Include="Biz\EntityDao.cs" />
+    <Compile Include="Biz\EntityManager.cs" />
+    <Compile Include="Biz\IDao\IBoQuymoManager.cs" />
+    <Compile Include="Biz\IDao\ICategoriesManager.cs" />
+    <Compile Include="Biz\IDao\IGroup_Manager.cs" />
+    <Compile Include="Biz\IDao\IQuymoManager.cs" />
+    <Compile Include="Biz\IDao\IT_DoucumentManager.cs" />
+    <Compile Include="Biz\IDao\IT_TypeDocProperty.cs" />
+    <Compile Include="Biz\IDao\IUserManager.cs" />
+    <Compile Include="Biz\ManagerFactory.cs" />
+    <Compile Include="Core\AppConfig.cs" />
+    <Compile Include="Dal\Lib\quytrinh.cs" />
+    <Compile Include="Dal\Lib\mangnghiepvu.cs" />
+    <Compile Include="Entities\DanhMucNam.cs" />
+    <Compile Include="Entities\FileExplorer\UploadDataModel.cs" />
+    <Compile Include="Entities\KhoiTaoJob\ChonThanhVienDotKiemToanRequest.cs" />
+    <Compile Include="Entities\KhoiTaoJob\DotKiemToan.cs" />
+    <Compile Include="Entities\FileExplorer\UploadResult.cs" />
+    <Compile Include="Entities\FileExplorer\FileResult.cs" />
+    <Compile Include="Core\DataConfig.cs" />
+    <Compile Include="Core\StaticDatas.cs" />
+    <Compile Include="Dal\dm_boquymo.cs" />
+    <Compile Include="Dal\dm_loaidoituongkiemtoan.cs" />
+    <Compile Include="Dal\bus_application_role.cs" />
+    <Compile Include="Dal\dm_nhansu.cs" />
+    <Compile Include="Dal\dm_quymo.cs" />
+    <Compile Include="Dal\group_ktnb.cs" />
+    <Compile Include="Dal\Lib\doituongkiemtoan.cs" />
+    <Compile Include="Dal\Lib\tieuchinam.cs" />
+    <Compile Include="Dal\qt_qlybotieuchi.cs" />
+    <Compile Include="Dal\qt_serverconf.cs" />
+    <Compile Include="Dal\T_Document.cs" />
+    <Compile Include="Dal\T_TypeDocProperty.cs" />
+    <Compile Include="Entities\BoQuyMo.cs" />
+    <Compile Include="Entities\CacDoiTuongKiemToan\QuyMoDoiTuongKiemToan.cs" />
+    <Compile Include="Entities\CacDoiTuongKiemToan\RankLoaiDoiTuongKiemToan.cs" />
+    <Compile Include="Entities\CustomUser.cs" />
+    <Compile Include="Entities\KeHoachNam\DuyetKeHoachNam.cs" />
+    <Compile Include="Entities\KeHoachNam\DoiTuongKiemToan.cs" />
+    <Compile Include="Entities\KhoiTaoJob\MangNghiepVu.cs" />
+    <Compile Include="Entities\KhoiTaoJob\ThanhVienDotKT.cs" />
+    <Compile Include="Entities\KhoiTaoJob\RiskProfile.cs" />
+    <Compile Include="Entities\KhoiTaoJob\ThanhVienDotKiemToan.cs" />
+    <Compile Include="Entities\KhoiTaoJob\UpLoadFileDotKiemToan.cs" />
+    <Compile Include="Entities\LoaiDoiTuongKiemToan.cs" />
+    <Compile Include="Entities\PhongBan.cs" />
+    <Compile Include="Entities\QuyMo.cs" />
+    <Compile Include="Entities\TanSuat.cs" />
+    <Compile Include="Enums\BoTieuChiKeHoachNamEnum.cs" />
+    <Compile Include="Enums\DotKiemToanEnum.cs" />
+    <Compile Include="Enums\KeHoachNamEnum.cs" />
+    <Compile Include="Enums\RuiRoEnum.cs" />
+    <Compile Include="Enums\ThuTucEnum.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\PagedExtensions.cs" />
+    <Compile Include="Extensions\UserExtensions.cs" />
+    <Compile Include="Extensions\YearExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Commons\Helpers\JsonHelper.cs" />
+    <Compile Include="Commons\Helpers\PagingHelper.cs" />
+    <Compile Include="Commons\Logs\Log.cs" />
+    <Compile Include="Commons\Logs\Logger.cs" />
+    <Compile Include="Commons\MiscUtils.cs" />
+    <Compile Include="Commons\PagedUtils\PagedList.cs" />
+    <Compile Include="Commons\PagedUtils\PagedWeb.cs" />
+    <Compile Include="Commons\UrlParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

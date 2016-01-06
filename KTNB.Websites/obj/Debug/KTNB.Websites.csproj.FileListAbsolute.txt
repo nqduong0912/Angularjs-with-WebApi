@@ -1,0 +1,200 @@
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.Designer.cs
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.xsc
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.xsd
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.xss
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Rpt\BaoCaoChiTiet.rpt
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Rpt\BaoCaoSoBo.rpt
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Rpt\BienBanKTKT.rpt
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Antlr3.Runtime.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\C1.Web.C1Input.2.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\C1.Web.C1WebGrid.2.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.CrystalReports.Design.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Data.AdoDotNetInterop.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Enterprise.Framework.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Enterprise.InfoStore.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.ReportSource.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Shared.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Web.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\edtFTPnet.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.SqlServer.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\IdbMgmt.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Extended.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ldapIf.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Web.Infrastructure.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Newtonsoft.Json.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Novell.Directory.Ldap.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Configuration.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Data.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Drawing.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.EnterpriseServices.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Net.Http.Formatting.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Runtime.Serialization.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.ServiceModel.Web.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.DynamicData.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Entity.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.WebHost.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Mobile.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Optimization.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Routing.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Services.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Xml.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.cif.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.helper.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.objectcontext.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.ums.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.webhandler.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.wfs.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\WebGrease.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\log4net.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.OrmLite.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.Interfaces.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.OrmLite.SqlServer.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.Text.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.interface.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.dms.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.Common.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Extended.pdb
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Antlr3.Runtime.pdb
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.SqlServer.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Newtonsoft.Json.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Net.Http.Formatting.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.WebHost.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Optimization.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.csprojResolveAssemblyReference.cache
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Websites.dll.config
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Websites.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Websites.pdb
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.dll.licenses
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.pdb
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.Ado.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.AspNet.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.Core.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.EF6.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Helpers.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Mvc.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Razor.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Deployment.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Razor.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Helpers.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Mvc.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Razor.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Deployment.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Razor.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Biz.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Biz.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.Designer.cs
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.xsc
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.xsd
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Definition\BienBanKTKT.xss
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Rpt\BaoCaoChiTiet.rpt
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Rpt\BaoCaoSoBo.rpt
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Modules\Reports\Data\Rpt\BienBanKTKT.rpt
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Websites.dll.config
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Websites.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Websites.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Antlr3.Runtime.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\C1.Web.C1Input.2.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\C1.Web.C1WebGrid.2.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.CrystalReports.Design.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Data.AdoDotNetInterop.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Enterprise.Framework.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Enterprise.InfoStore.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.ReportSource.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Shared.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\CrystalDecisions.Web.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\edtFTPnet.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.SqlServer.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.Ado.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.AspNet.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.Core.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Glimpse.EF6.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\IdbMgmt.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Biz.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Extended.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ldapIf.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Microsoft.Web.Infrastructure.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Newtonsoft.Json.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Novell.Directory.Ldap.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Configuration.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Data.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Drawing.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.EnterpriseServices.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Net.Http.Formatting.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Runtime.Serialization.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.ServiceModel.Web.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.DynamicData.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Entity.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Helpers.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.WebHost.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Mobile.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Mvc.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Optimization.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Razor.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Routing.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Services.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Deployment.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Razor.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Xml.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.cif.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.helper.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.objectcontext.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.ums.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.webhandler.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.wfs.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\WebGrease.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\log4net.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.OrmLite.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.Interfaces.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.OrmLite.SqlServer.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.Text.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.interface.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\vpb.app.business.core.dms.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\ServiceStack.Common.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Biz.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\KTNB.Extended.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Antlr3.Runtime.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\EntityFramework.SqlServer.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\Newtonsoft.Json.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Net.Http.Formatting.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Helpers.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Http.WebHost.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Mvc.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Optimization.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.Razor.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Deployment.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\bin\System.Web.WebPages.Razor.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.csprojResolveAssemblyReference.cache
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.dll.licenses
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Websites\obj\Debug\KTNB.Websites.pdb

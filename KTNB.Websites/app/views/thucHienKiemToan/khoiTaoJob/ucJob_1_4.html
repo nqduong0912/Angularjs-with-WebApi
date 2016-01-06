@@ -1,0 +1,58 @@
+﻿<!-- UCJOB-1.4 Trưởng đoàn thêm/sửa Mảng nghiệp vụ/Quy trình -->
+<fieldset>
+    <legend>1. Gán quy trình cho thành viên</legend>
+    <div class="vpb-search form-horizontal">
+        <table class="vpb-table-filter">
+            <tr>
+                <td>
+                    <label for="mang-nv-pctvnrpt" class="control-label">Mảng NV</label>
+                </td>
+                <td>
+                    <select data-ng-model="mangNghiepVuId" data-ng-options="t.PK_DocumentID as t.Ten for t in lstMangNghiepVu" data-ng-change="changeMangNV(mangNghiepVuId)" class="form-control" style="width: 200px"></select>
+                </td>
+                <td>
+                    <label for="quy-trinh-pctvnrpt" class="control-label">Quy trình</label>
+                </td>
+                <td>
+                    <select data-ng-model="quyTrinhId" data-ng-options="t.PK_DocumentID as t.Ten for t in dsQuyTrinh" class="form-control" style="width: 200px"></select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="thanh-vien-pctvnrpt" class="control-label">Thành viên</label>
+                </td>
+                <td>
+                    <select data-ng-model="thanhVienId" data-ng-options="t.PK_UserID as t.FullName for t in dsUserInDotKT" class="form-control"></select>
+                </td>
+                <td colspan="2">
+                    <button type="button" class="btn btn-default" data-ng-click="ganTV(thanhVienId, quyTrinhId, mangNghiepVuId)">Gán</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="table-responsive">
+        <table class="vpb--table table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Thành viên</th>
+                    <th>Quy trình</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="item in dsThanhVienQuyTrinh">
+                    <td>{{ item.UserName }}</td>
+                    <td>{{ item.QuyTrinhText }}</td>
+                    <td>
+                        <a class="click-icon" href="#" title="Xóa" data-ng-click="deleteTV(item.PK_UserID)">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="vpb-btns">
+        <button type="button" class="btn btn-primary" data-ng-click="luuDsThanhVienQuyTrinh(id, dsThanhVienQuyTrinh)" title="Lưu">Lưu</button>
+    </div>
+</fieldset>

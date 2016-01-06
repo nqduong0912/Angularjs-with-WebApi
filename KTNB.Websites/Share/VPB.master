@@ -1,0 +1,297 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="VPB_KTNB.Share.Share_VPB" CodeBehind="VPB.master.cs" %>
+<!DOCTYPE html>
+<html lang="vi" data-ng-app="vpbApp">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>VPBank</title>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+
+    <link rel="shortcut icon" href="~/Images/Icon/favicon.ico" type="image/x-icon" />
+
+    <script src="<%= ResolveUrl("~/Scripts/jquery-1.11.3.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/jquery.blockUI.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/getquerystring.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/jquery.jbind-1.5.8.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/jquery.maskedinput-1.4.0.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/date.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/jquery.datePicker.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/jquery.autocomplete.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/jquery-ui.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/pick-a-color-1.2.3.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/tinycolor-0.9.15.min.js") %>"></script>
+    <script src="<%= ResolveUrl("~/Javascript/BackEndProcess.js") %>"></script>
+</head>
+<body>
+    <form runat="server" id="frmWsp" name="frmWsp" clientidmode="Static">
+        <div id="contextRole" class="dropdown clearfix" style="display: none; position: absolute; z-index: 199998">
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; background: #48b061;">
+                <asp:Repeater ID="rptRole" runat="server" OnItemDataBound="rptRole_ItemDataBound">
+                    <ItemTemplate>
+                        <li>
+                            <asp:Literal ID="lblRole" runat="server"></asp:Literal></li>
+                    </ItemTemplate>
+                    <AlternatingItemTemplate>
+                        <li>
+                            <asp:Literal ID="lblRole" runat="server"></asp:Literal></li>
+                    </AlternatingItemTemplate>
+                    <SeparatorTemplate>
+                        <li class="divider"></li>
+                    </SeparatorTemplate>
+                </asp:Repeater>
+            </ul>
+        </div>
+        <div class="cl-banner">
+            <img runat="server" class="img-responsive" src="~/Images/ktnb/banner.jpg" />
+            <div class="text-banner navbar-header navbar-right col-md-7 col-md-offset-5">
+                <span>Phần mềm hỗ trợ hoạt động kiểm toán nội bộ</span>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-static-top">
+                <div class="navbar-header navbar-right">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="mn-right">
+                        <a href="javascript: void(0);" id="btnSwitchRole"><span class="icon-menu"></span>
+                            <asp:Literal ID="WhoIsLogin" runat="server"></asp:Literal>
+                        </a>
+                        (<a href="javascript: void(0);" onclick="exit();" class="link-out">Thoát</a>
+                        | 
+                    <a href="javascript: void(0);" onclick="help();" class="link-out">Trợ giúp</a>)
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <asp:Literal runat="server" ID="barmenu"></asp:Literal>
+                </div>
+            </nav>
+            <div class="page-wrapper">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 sidebar">
+                        <asp:Literal runat="server" ID="boxmenu"></asp:Literal>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+        <div class="cl-footer">
+            <div class="row">
+                <div class="col-lg-12 img-footer">
+                    <img runat="server" class="img-responsive" src="~/Images/ktnb/img-footer.png" alt="Footer" />
+                    <div class="footer-content">
+                        <p>Ngân hàng Việt Nam Thịnh vượng VPBank © 2012.</p>
+                        <p>Trụ sở chính: 72 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội. Điện thoại: 043.9288869. Fax: 043.9288867. Email: customercare@vpb.com.vn</p>
+                        <p>SWIFT code: VPBKVNVX. Sơ đồ website | Chính sách bảo mật | Webmail</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Register AngularJS Utils -->
+    <%: Scripts.Render("~/Scripts/angularjs") %>
+
+    <!-- Constants data -->
+    <%: Scripts.Render("~/Scripts/vpb-apps/constants") %>
+    <script type="text/javascript">
+        var configs = {
+            baseUrl: "<%= String.Format("{0}://{1}{2}", Request.Url.Scheme, Request.Url.Authority, VirtualPathUtility.ToAbsolute("~/")) %>",
+            currentYear: <%= MiscUtils.GetCurrentYear() %>, // Năm hiện tại dùng để kiểm toán
+            serverTime: new Date(<%= JsonConvert.SerializeObject(DateTime.Now) %>)            
+        };
+
+        var userContext = {
+            UserID: '<%= obj.UserID %>',
+            FullName: '<%= obj.FullName %>',
+            UserName: '<%= obj.UserName %>',
+            Roles: <%= JsonConvert.SerializeObject(obj.Roles) %>,
+            Groups: <%= JsonConvert.SerializeObject(obj.Groups) %>,
+            isInRole: function (roleId) {
+                for (var i = 0; i < userContext.Roles.length; i++) {
+                    var role = userContext.Roles[i];
+                    if (role.RoleID.toLowerCase() === roleId.toLowerCase()) {
+                        return true;
+                    }
+                }
+
+                return false;
+            },
+            isInGroup: function (groupId) {
+                for (var i = 0; i < userContext.Groups.length; i++) {
+                    var group = userContext.Groups[i];
+                    if (group.GroupID.toLowerCase() === groupId.toLowerCase()) {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        };
+    </script>
+
+    <!-- My AngularJS -->
+    <%: Scripts.Render("~/Scripts/vpb-apps/angular") %>
+
+    <script type="text/javascript">
+        /*************************************************************************************************************/
+        var div_id_moved = "";
+        var div_id_clicked = "";
+        window.status = "<%= username %>";
+        window.status += " | <%= usercode %>";
+        window.status += " | <%= rolename %>";
+        window.status += " | <%= groupname %>";
+        window.status += " | <%= groupdesc %>";
+
+        /*************************************************************************************************************/
+        $(function () {
+            var $contextMenu = $("#contextRole");
+            $('html').click(function (e) {
+                if (e.target.id === 'btnSwitchRole') {
+                    $contextMenu.css({
+                        display: "block",
+                        left: $("#btnSwitchRole").offset().left - $contextMenu.outerWidth() + $("#btnSwitchRole").outerWidth(),
+                        top: $("#btnSwitchRole").offset().top + 24
+                    });
+                } else {
+                    $contextMenu.hide();
+                }
+            });
+        });
+
+        function ToggleLeftFrame() {
+            if (ifrContentMain.fsTop1.cols == "0,*") {
+                ifrContentMain.fsTop1.cols = "180,*";
+            } else {
+                ifrContentMain.fsTop1.cols = "0,*";
+            }
+        }
+
+        /*************************************************************************************************************/
+        function exit() {
+            if (confirm("Bạn có muốn thoát khỏi phiên làm việc hiện tại này ?")) {
+                window.location.href = configs.baseUrl + "SignIn.aspx?act=out";
+            }
+        }
+
+        function help() {
+            window.open("Helps/userguide.pdf?a=4f6fd5d0-1c68-4994-a660-a52415bbbb3e&an=&c=0d5537b0-013d-43f6-a5ef-7a13f40c7f72&cn=&nw=0&a=4F6FD5D0-1C68-4994-A660-A52415BBBB3E", 'blank');
+        }
+
+        function do_postback(appID) {
+            if (appID.toLowerCase() == "exit") {
+                if (confirm("Bạn có muốn thoát khỏi phiên làm việc hiện tại này ?")) {
+                    window.open("SignIn.aspx?i=1", "_self");
+
+                    return true;
+                }
+            } else if (appID.toLowerCase() == "main") {
+                var obj = eval(document.body.getElementsByTagName("div"))
+                for (i = 0; i < document.body.getElementsByTagName("div").length; i++) {
+                    obj[i].style.color = 'white';
+                }
+
+                //window.open("TreeMenu.aspx", "fraToc");
+                //resizeIframe('fraToc', 247);
+                return true;
+            } else if (appID.toLowerCase() == "help") {
+                var url = "../Modules/Report/Help.aspx";
+                window.open(url, 'help');
+                return true;
+            } else {
+                if (div_id_clicked != "") {
+                    document.getElementById(div_id_clicked).style.color = "white";
+                    div_id_clicked = "";
+                }
+
+                div_id_clicked = div_id_moved;
+                // var url = "TreeMenu.aspx?appid=" + appID;
+
+                //window.open(url, "fraToc");
+                //resizeIframe('fraToc', 247);
+                return true;
+            }
+        }
+
+        function do_postback(appID, obj) {
+            $(".menu-main a").css("border-bottom", "0");
+            if (appID.toLowerCase() == "exit") {
+                if (confirm("Bạn có muốn thoát khỏi phiên làm việc hiện tại này ?")) {
+                    window.location.href = "SignOut.vpb";
+                }
+
+                return false;
+            } else if (appID.toLowerCase() == "search") {
+                alert("tim kiem");
+                //var url = "modules/wfs/TimKiem.aspx";
+                //window.open(url, "fraToc");
+            } else if (appID.toLowerCase() == "main") {
+                var obj_div = eval(document.body.getElementsByTagName("div"))
+                for (i = 0; i < document.body.getElementsByTagName("div").length; i++)
+                    obj_div[i].style.color = 'white';
+                // window.open("TreeMenu.aspx", "fraToc");
+                // resizeIframe('fraToc', 247);
+            } else if (appID.toLowerCase() == "help") {
+                var url = "../Modules/Report/Help.aspx";
+                window.open(url, 'blank');
+            } else {
+                if (div_id_clicked != "") {
+                    document.getElementById(div_id_clicked).style.color = "white";
+                    div_id_clicked = "";
+                }
+                div_id_clicked = div_id_moved;
+                // var url = "TreeMenu.aspx?appid=" + appID;
+                // window.open(url, "fraToc");
+                // resizeIframe('fraToc', 247);
+            }
+
+            obj.style.borderBottom = "4px solid #E61C29";
+            window.open("Wellcome.html", "fraDetail");
+
+            return false;
+        }
+
+        function Overme(obj) {
+            div_id_moved = obj.id;
+            obj.style.color = 'Yellow';
+        }
+
+        function Outme(obj) {
+            if (obj.id == div_id_clicked) return;
+            obj.style.color = 'White';
+        }
+
+        function signout_apps() {
+            window.location = "vpb.apps";
+        }
+
+        function seletingItem(id) {
+            $("div").attr("style", "color:Red;");
+            $("#" + id).attr("style", "color:White;");
+        }
+
+        function switchToRole(roleId, groupId) {
+            var url = "switchrole.do";
+            var query = "nr=" + roleId + "&ng=" + groupId;
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: query,
+                success: function () {
+                    window.location.reload(true);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTNB.Websites", "KTNB.Websites\KTNB.Websites.csproj", "{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTNB.Biz", "KTNB.Biz\KTNB.Biz.csproj", "{027B23E2-FF3A-4543-9F1F-00E0F3150B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTNB.Extended", "KTNB.Extended\KTNB.Extended.csproj", "{3C8B657C-2188-4AF5-8B30-979134A4D501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KTNB.Test", "KTNB.Test\KTNB.Test.csproj", "{E580BF44-FB53-42CC-A624-B0D6CB86A893}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://anhnd-w8:8080/tfs/vp%20bank
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = KTNB.Extended\\KTNB.Extended.csproj
+		SccProjectName1 = KTNB.Extended
+		SccLocalPath1 = KTNB.Extended
+		SccProjectUniqueName2 = KTNB.Test\\KTNB.Test.csproj
+		SccProjectName2 = KTNB.Test
+		SccLocalPath2 = KTNB.Test
+		SccProjectUniqueName3 = KTNB.Websites\\KTNB.Websites.csproj
+		SccProjectName3 = KTNB.Websites
+		SccLocalPath3 = KTNB.Websites
+		SccProjectUniqueName4 = KTNB.Biz\\KTNB.Biz.csproj
+		SccProjectName4 = KTNB.Biz
+		SccLocalPath4 = KTNB.Biz
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Debug|x64.ActiveCfg = Debug|x64
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Debug|x64.Build.0 = Debug|x64
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Release|x64.ActiveCfg = Release|x64
+		{5D6B79C9-2CDD-4948-A13D-5BD4916FC181}.Release|x64.Build.0 = Release|x64
+		{027B23E2-FF3A-4543-9F1F-00E0F3150B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027B23E2-FF3A-4543-9F1F-00E0F3150B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027B23E2-FF3A-4543-9F1F-00E0F3150B06}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{027B23E2-FF3A-4543-9F1F-00E0F3150B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027B23E2-FF3A-4543-9F1F-00E0F3150B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027B23E2-FF3A-4543-9F1F-00E0F3150B06}.Release|x64.ActiveCfg = Release|Any CPU
+		{3C8B657C-2188-4AF5-8B30-979134A4D501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C8B657C-2188-4AF5-8B30-979134A4D501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C8B657C-2188-4AF5-8B30-979134A4D501}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3C8B657C-2188-4AF5-8B30-979134A4D501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C8B657C-2188-4AF5-8B30-979134A4D501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C8B657C-2188-4AF5-8B30-979134A4D501}.Release|x64.ActiveCfg = Release|Any CPU
+		{E580BF44-FB53-42CC-A624-B0D6CB86A893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E580BF44-FB53-42CC-A624-B0D6CB86A893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E580BF44-FB53-42CC-A624-B0D6CB86A893}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E580BF44-FB53-42CC-A624-B0D6CB86A893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E580BF44-FB53-42CC-A624-B0D6CB86A893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E580BF44-FB53-42CC-A624-B0D6CB86A893}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,167 @@
+﻿<!-- UCJOB-1.1 Nhập thông tin chung cho đợt kiểm toán -->
+<fieldset>
+    <table class="vpb-table-filter">
+        <tr>
+            <td><b>Loại đối tượng kiểm toán</b></td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.LoaiDTKTText" class="form-control" readonly />
+            </td>
+            <td><b>Tháng dự kiến</b></td>
+            <td>
+                <select data-ng-model="data.DotKiemToan.ThangDuKienKT" data-ng-options="t.value as t.name for t in dsThang" class="form-control"></select>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Đối tượng kiểm toán</b></td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.DTKTText" class="form-control" readonly />
+            </td>
+            <td><b>Ngày quyết định kiểm toán</b></td>
+            <td>
+                <input type="datetime" data-ng-model="data.DotKiemToan.NgayQDText" class="form-control vpbDatepickerJs" />
+            </td>
+        </tr>
+        <tr>
+            <td><b>Trạng thái đợt kiểm toán</b></td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.TrangThaiText" class="form-control" readonly />
+            </td>
+        </tr>
+        <tr>
+            <td><b>Tên đợt kiểm toán</b> <span class="star-red">*</span></td>
+            <td colspan="3">
+                <input type="text" data-ng-model="data.DotKiemToan.DotKT" class="form-control" />
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>1. Thông tin chung</legend>
+    <table class="vpb-table-filter">
+        <tr>
+            <td><strong>Mục tiêu</strong> <span class="star-red">*</span></td>
+            <td colspan="4">
+                <textarea ckeditor="editorOptions" data-ng-model="data.DotKiemToan.MucTieu" class="form-control" rows="3" cols="20"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Phạm vi</b><span class="star-red">*</span></td>
+            <td colspan="4">
+                <textarea ckeditor="editorOptions" data-ng-model="data.DotKiemToan.PhamVi" rows="3" cols="20" class="form-control"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Lập kế hoạch</b></td>
+            <td>Ngày bắt đầu</td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.LapKHStartText" class="form-control vpb-datepicker-js" />
+            </td>
+            <td>Ngày kết thúc</td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.LapKHEndText" class="form-control vpb-datepicker-js" />
+            </td>
+        </tr>
+        <tr>
+            <td><b>Thực địa</b></td>
+            <td>Ngày bắt đầu</td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.ThucDiaStartText" class="form-control vpb-datepicker-js" />
+            </td>
+            <td>Ngày kết thúc</td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.ThucDiaEndText" class="form-control vpb-datepicker-js" />
+            </td>
+        </tr>
+        <tr>
+            <td><b>Báo cáo</b></td>
+            <td>Ngày bắt đầu</td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.BaoCaoStartText" class="form-control vpb-datepicker-js" />
+            </td>
+            <td>Ngày kết thúc</td>
+            <td>
+                <input type="text" data-ng-model="data.DotKiemToan.BaoCaoEndText" class="form-control vpb-datepicker-js" />
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<fieldset>
+    <legend>2. Danh sách đơn vị liên quan</legend>
+    <table class="vpb-table-filter">
+        <tr>
+            <td><b>Loại đối tượng kiểm toán</b></td>
+            <td>
+                <select data-ng-model="loaiDTKT" data-ng-options="d.PK_DocumentID as d.Ten for d in dsLoaiDTKT" data-ng-change="changeLoaiDTKT(loaiDTKT)" class="form-control" style="width: 200px"></select>
+            </td>
+            <td><b>Đối tượng kiểm toán</b></td>
+            <td>
+                <select data-ng-model="DTKT" data-ng-options="d.PK_DocumentID as d.Ten for d in dsDTKT" class="form-control" style="width: 200px"></select>
+            </td>
+            <td>
+                <button type="button" data-ng-click="chonDonVi(DTKT, loaiDTKT)" class="btn btn-default">Chọn</button>
+            </td>
+        </tr>
+    </table>
+    <div class="table-responsive">
+        <table class="vpb--table table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Đối tượng kiểm toán</th>
+                    <th>Loại đối tượng kiểm toán</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="item in donViLienQuan">
+                    <td>{{ item.TenDTKT }}</td>
+                    <td>{{ item.TenLoaiDTKT }}</td>
+                    <td>
+                        <a class="click-icon" href="#" title="Xóa" data-ng-click="deleteDV(item.IDDTKT)">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <table class="vpb-table-filter">
+        <tr>
+            <td>
+                <label for="upload-file-1">File đính kèm</label>
+            </td>
+            <td>
+                <input id="upload-file-1" name="file1" type="file" ngf-select ng-model="picFile1" class="form-control" required />
+            </td>
+            <td>
+                <button type="button" ng-click="uploadPic(picFile1, 'tab1')" class="btn btn-default">Thêm</button>
+            </td>
+        </tr>
+    </table>
+    <div class="table-responsive">
+        <table class="vpb--table table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Tên file</th>
+                    <th>Ngày cập nhật</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="item in uploadFiles">
+                    <td>
+                        <a href="{{ baseUrl }}{{ item.Path | limitTo:item.Path.length-2:2 }}" target="_blank">{{ item.Name }}</a>
+                    </td>
+                    <td>{{ item.CreateDate | date : 'dd/MM/yyyy HH:mm' }}</td>
+                    <td>
+                        <a class="click-icon" href="#" title="Xóa" data-ng-click="xoaFile(item.Name)">
+                            <i class="fa fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <button type="button" data-ng-click="luuThongTin(data.DotKiemToan)" class="btn btn-primary">Lưu</button>
+</fieldset>

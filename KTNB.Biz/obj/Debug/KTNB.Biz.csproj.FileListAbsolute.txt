@@ -1,0 +1,72 @@
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Extended.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.helper.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.objectcontext.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.wfs.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\log4net.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.OrmLite.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.Interfaces.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.Text.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.interface.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.ums.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.dms.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.Common.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Extended.pdb
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\obj\Debug\KTNB.Biz.csprojResolveAssemblyReference.cache
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.SqlServer.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Newtonsoft.Json.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Net.Http.Formatting.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.WebHost.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.SqlServer.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Newtonsoft.Json.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Net.Http.Formatting.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.WebHost.xml
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Biz.dll.config
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Biz.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Biz.pdb
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\obj\Debug\KTNB.Biz.dll
+D:\code\tfs\VP Bank\Kiem Toan Noi Bo\Code\KTNB.Biz\obj\Debug\KTNB.Biz.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Biz.dll.config
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Biz.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Biz.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Extended.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Net.Http.Formatting.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.WebHost.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.helper.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.objectcontext.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.wfs.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\log4net.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.OrmLite.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.Interfaces.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.Text.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.interface.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.ums.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\vpb.app.business.core.dms.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\ServiceStack.Common.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\KTNB.Extended.pdb
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Net.Http.Formatting.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\bin\Debug\System.Web.Http.WebHost.xml
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\obj\Debug\KTNB.Biz.csprojResolveAssemblyReference.cache
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\obj\Debug\KTNB.Biz.dll
+D:\Work\Code\Kiem Toan Noi Bo\Code\KTNB.Biz\obj\Debug\KTNB.Biz.pdb

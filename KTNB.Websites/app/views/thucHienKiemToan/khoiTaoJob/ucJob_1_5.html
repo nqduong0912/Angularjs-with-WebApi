@@ -1,0 +1,78 @@
+﻿<!-- UCJOB-1.5 Thành viên được phân công nhập Risk profile -->
+<div class="vpb-search">
+    <table class="vpb-table-filter">
+        <tr>
+            <td>
+                <label for="mang-nghiep-vu-nrp" class="control-label">Mảng nghiệp vụ</label>
+            </td>
+            <td>
+                <select id="mang-nghiep-vu-nrp" ng-model="mangNghiepVu" options="dsMangNghiepVu" ng-options="m.value as m.text for m in dsMangNghiepVu" class="form-control vpbChosenJs"></select>
+            </td>
+            <td>
+                <label for="quy-trinh-nrp" class="control-label">Quy trình</label>
+            </td>
+            <td>
+                <select id="quy-trinh-nrp" ng-model="quyTrinh" options="dsQuyTrinh" ng-options="m.value as m.text for m in dsQuyTrinh" class="form-control vpbChosenJs"></select>
+            </td>
+        </tr>
+    </table>
+    <div class="table-responsive">
+        <table class="vpb--table table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Bước quy trình</th>
+                    <th>Mục tiêu KS</th>
+                    <th>Rủi ro</th>
+                    <th>Kiểm soát</th>
+                    <th>Thủ tục</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="6" class="text-right">
+                        <button type="button" ng-click="addFunc()" class="btn btn-default">Thêm</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr ng-repeat="m in dsRiskProfiles">
+                    <td>
+                        <div ng-show="true">{{ m.BuocQuyTrinh }}</div>
+                    </td>
+                    <td>
+                        <div ng-show="true">{{ m.MucTieuKiemSoat }}</div>
+                    </td>
+                    <td>
+                        <div ng-show="true">{{ m.RuiRo }}</div>
+                    </td>
+                    <td>
+                        <div ng-show="true">{{ m.KiemSoat }}</div>
+                    </td>
+                    <td>
+                        <div ng-show="true">{{ m.ThuTuc }}</div>
+                    </td>
+                    <td>
+                        <div ng-show="true">
+                            <a href="#" ng-click="editFunc()" class="click-icon" title="Sửa"><i class="fa fa-edit"></i></a>
+                        </div>
+                        <div ng-hide="true">
+                            <a href="#" ng-click="saveFunc()" class="click-icon" title=""><i class="fa fa-save"></i></a>
+                            <a href="#" ng-click="cancelFunc()" class="click-icon" title="Hủy"><i class="fa fa-close"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <div class="vpb-btns">
+        <button type="button" ng-click="applyFunc()" class="btn btn-primary">Trình duyệt</button>
+    </div>
+</div>

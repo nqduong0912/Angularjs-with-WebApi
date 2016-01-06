@@ -1,0 +1,106 @@
+﻿<!-- UCJOB-1.6 Trưởng Đoàn phê duyệt Risk profile thành viên nhập -->
+<fieldset>
+    <legend></legend>
+    <div class="vpb-search form-horizontal">
+        <table class="vpb-table-filter">
+            <tr>
+                <td>
+                    <label for="quy-trinh-risk-profile-approve" class="control-label">Quy trình/activity</label>
+                </td>
+                <td>
+                    <select id="quy-trinh-risk-profile-approve" ng-model="approveTab.currentQuyTrinhId" options="approveTab.dsQuyTrinh" ng-options="m.value as m.text for m in approveTab.dsQuyTrinh" class="form-control"></select>
+                </td>
+                <td>
+                    <label for="thanh-vien-risk-profile-approve" class="control-label">Thành viên</label>
+                </td>
+                <td>
+                    <select id="thanh-vien-risk-profile-approve" ng-model="approveTab.currentThanhVienId" options="approveTab.dsThanhVien" ng-options="m.value as m.text for m in approveTab.dsThanhVien" class="form-control"></select>
+                </td>
+                <td>
+                    <button id="tu-choi-duyet-risk-profile-approve" type="button" ng-click="tuChoiDuyetApproveTabFunc()" class="btn btn-default">Từ chối duyệt</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="table-responsive">
+        <table class="vpb--table table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Mảng nghiệp vụ</th>
+                    <th>Quy trình</th>
+                    <th>Thành viên</th>
+                    <th>Bước/hoạt động chi tiết</th>
+                    <th>Mục tiêu</th>
+                    <th>Rủi ro</th>
+                    <th>Kiểm soát</th>
+                    <th>Thủ tục</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="m in approveTab.dsRiskProfile">
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.MangNghiepVu }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.MangNghiepVu" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.QuyTrinh }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.QuyTrinh" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.ThanhVien }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.ThanhVien" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.Buoc }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.Buoc" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.MucTieu }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.MucTieu" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.RuiRo }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.RuiRo" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.KiemSoat }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.KiemSoat" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">{{ m.ThuTuc }}</div>
+                        <div data-ng-show="m.IsEdit">
+                            <input type="text" ng-model="m.ThuTuc" class="form-control" />
+                        </div>
+                    </td>
+                    <td>
+                        <div data-ng-hide="m.IsEdit">
+                            <a href="#" ng-click="suaRiskProfileApproveTabFunc(m)" class="click-icon" title="Sửa"><i class="fa fa-edit"></i></a>
+                        </div>
+                        <div data-ng-show="m.IsEdit">
+                            <a href="#" ng-click="luuRiskProfileApproveTabFunc(m)" class="click-icon" title="Lưu"><i class="fa fa-save"></i></a>
+                            <a href="#" ng-click="huyRiskProfileApproveTabFunc(m)" class="click-icon" title="Hủy"><i class="fa fa-close"></i></a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="vpb-btns">
+        <button id="submit-risk-profile-approve" type="button" ng-click="submitApproveTabFunc()" class="btn btn-primary">Submit</button>
+    </div>
+</fieldset>

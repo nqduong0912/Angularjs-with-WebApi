@@ -1,0 +1,75 @@
+﻿<!-- UCJOB-1 Lập đợt kiểm toán -->
+<table class="vpb-table-filter">
+    <colgroup>
+        <col />
+        <col style="width: 200px;" />
+    </colgroup>
+    <tr>
+        <td>Trạng thái</td>
+        <td>
+            <select data-ng-model="trangThai" data-ng-options="d.value as d.name for d in dsTrangThai" data-ng-change="searchFunc(trangThai)" class="form-control"></select>
+        </td>
+    </tr>
+</table>
+<div>
+    <div data-ng-show="data.TotalPages > 0" class="vpb--pagination clearfix">
+        <div class="pull-left">
+            <span>Trang {{ data.CurrentPage }}/{{ data.TotalPages }}</span>
+        </div>
+        <div class="pull-right">
+            <pagination total-items="data.TotalItems" ng-model="data.CurrentPage" max-size="data.NumberOfLinks" ng-change="changePageFunc(data.CurrentPage)" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="vpb--table table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Tên đợt KT</th>
+                    <th>ĐTKT</th>
+                    <th>Trong kế hoạch</th>
+                    <th>Đơn vị liên quan</th>
+                    <th>Tháng dự kiến</th>
+                    <th>Trạng thái ĐKT</th>
+                    <th>Lập kế hoạch</th>
+                    <th>Thực địa</th>
+                    <th>Báo cáo</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="item in data.Items">
+                    <td>{{ item.DotKT }}</td>
+                    <td>{{ item.DTKTText }}</td>
+                    <td>
+                        <span data-ng-show="item.TrongKeHoach">Trong kế hoạch</span>
+                        <span data-ng-show="!item.TrongKeHoach">Ngoài kế hoạch</span>
+                    </td>
+                    <td>{{ item.DonViLienQuanText }}</td>
+                    <td>
+                        <span ng-show="item.ThangDuKienKT != null">{{ item.ThangDuKienKT }}/{{item.Nam}}</span>
+                    </td>
+                    <td>
+                        <span ng-show="item.TrangThai == 0">Chưa thực hiện</span>
+                        <span ng-show="item.TrangThai == 1">Đã duyệt</span>
+                    </td>
+                    <td>{{ item.LapKH }}</td>
+                    <td>{{ item.ThucDia }}</td>
+                    <td>{{ item.BaoCao }}</td>
+                    <td>
+                        <a class="click-icon" href="KhoiTaoJob.aspx?a=2f17115e-4dcd-4691-bf4f-712fe3cffa79&curApp=0c2a2496-b6d9-492e-9fb2-a29537f7d32f&an=&c=f58fa6b2-b974-481c-9acf-739198ddd983&cn=&nw=0&id={{ item.Id }}&loaidoituongkiemtoanId={{ item.LoaiDTKT }}" title="Chi tiết">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div data-ng-show="data.TotalPages > 0" class="vpb--pagination clearfix">
+        <div class="pull-left">
+            <span>Trang {{ data.CurrentPage }}/{{ data.TotalPages }}</span>
+        </div>
+        <div class="pull-right">
+            <pagination total-items="data.TotalItems" ng-model="data.CurrentPage" max-size="data.NumberOfLinks" ng-change="changePageFunc(data.CurrentPage)" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+﻿.vpb--pagination {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.vpb--table > thead > tr > th,
+.vpb--table > thead > tr > td {
+    background-color: #007338;
+    color: #fff;
+}
+
+.vpb-table-filter > tbody > tr > td {
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
